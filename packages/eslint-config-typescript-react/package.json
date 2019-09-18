@@ -19,7 +19,7 @@
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": ">=2",
     "@typescript-eslint/parser": ">=2",
-    "eslint": ">=6",
+    "eslint": ">=6.4.0",
     "eslint-plugin-compat": ">=3",
     "eslint-plugin-import": ">=2",
     "eslint-plugin-jest": ">=22",
