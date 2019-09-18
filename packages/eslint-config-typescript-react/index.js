@@ -12,6 +12,7 @@ module.exports = {
   },
   rules: {
     '@typescript-eslint/no-unused-vars': 'warn',
+    'curly': 'error',
     'jest/consistent-test-it': ['error', { fn: 'it' }],
     'no-console': 'off',
 
