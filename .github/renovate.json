@@ -5,5 +5,11 @@
   "automerge": true,
   "major":  {
     "automerge": false
-  }
+  },
+  "packageRules": [
+    {
+      "depTypeList": ["peerDependencies"],
+      "rangeStrategy": "widen"
+    }
+  ]
 }
