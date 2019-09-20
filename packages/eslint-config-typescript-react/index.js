@@ -5,15 +5,14 @@ module.exports = {
     node: true,
   },
   extends: ['eslint:recommended', 'plugin:react/recommended'],
-  plugins: ['@typescript-eslint', 'import', 'react-hooks', 'jest'],
+  plugins: ['@typescript-eslint', 'import', 'react-hooks'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     sourceType: 'module',
   },
   rules: {
     '@typescript-eslint/no-unused-vars': 'warn',
-    'curly': 'error',
-    'jest/consistent-test-it': ['error', { fn: 'it' }],
+    curly: 'error',
     'no-console': 'off',
 
     // TS で interface を export すると no-undef エラーが出る
