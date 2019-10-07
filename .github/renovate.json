@@ -8,6 +8,10 @@
   },
   "packageRules": [
     {
+      "groupName": "Dev dependencies",
+      "depTypeList": ["devDependencies"]
+    },
+    {
       "depTypeList": ["peerDependencies"],
       "rangeStrategy": "widen"
     }
