@@ -14,6 +14,10 @@
     {
       "depTypeList": ["peerDependencies"],
       "rangeStrategy": "widen"
+    },
+    {
+      "groupName": "ESLint",
+      "packagePatterns": ["^eslint", "^@typescript-eslint"]
     }
   ]
 }
