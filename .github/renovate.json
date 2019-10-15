@@ -17,7 +17,7 @@
     },
     {
       "groupName": "ESLint",
-      "packagePatterns": ["^eslint", "^@typescript-eslint"]
+      "packagePatterns": ["^eslint/", "^@typescript-eslint/"]
     }
   ]
 }
