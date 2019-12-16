@@ -14,6 +14,7 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 'warn',
     curly: 'error',
     'no-console': 'off',
+    'no-extra-semi': 'off',
 
     // TS で interface を export すると no-undef エラーが出る
     // https://github.com/eslint/typescript-eslint-parser/issues/437
