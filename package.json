@@ -1,9 +1,11 @@
 {
   "name": "@jmdc/eslint-config",
   "version": "1.0.0",
-  "description": "ESLint config of JMDC Inc",
-  "main": "index.js",
-  "repository": "git@github.com:hdpinc/eslint-config-jmdc.git",
+  "description": "ESLint config of JMDC Inc.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hdpinc/eslint-config"
+  },
   "license": "MIT",
   "private": true,
   "workspaces": [
