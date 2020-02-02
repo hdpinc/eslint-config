@@ -1,6 +1,6 @@
 {
   "name": "@jmdc/eslint-config-typescript-react",
-  "version": "0.12.0",
+  "version": "0.13.0",
   "main": "index.js",
   "license": "MIT",
   "repository": {
@@ -8,7 +8,7 @@
     "url": "https://github.com/hdpinc/eslint-config/packages/eslint-config-typescript-react"
   },
   "dependencies": {
-    "@jmdc/eslint-config-typescript": "^0.3.0",
+    "@jmdc/eslint-config-typescript": "^0.4.0",
     "@typescript-eslint/eslint-plugin": "^2.18.0",
     "@typescript-eslint/parser": "^2.18.0",
     "eslint": "^6.8.0",
