@@ -11,7 +11,7 @@
     "eslint-plugin-import": "^2.19.1"
   },
   "devDependencies": {
-    "typescript": "^3.7.4"
+    "typescript": "^3.7.5"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": ">=2",
