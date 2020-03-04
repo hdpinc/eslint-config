@@ -1,9 +1,15 @@
 {
   "extends": ["config:base"],
+  "timezone": "Asia/Tokyo",
+  "schedule": "before 3am on the first day of the month",
   "prHourlyLimit": 0,
   "rangeStrategy": "bump",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["before 3am on the first day of the month"]
+  },
   "automerge": true,
-  "major":  {
+  "major": {
     "automerge": false
   },
   "packageRules": [
