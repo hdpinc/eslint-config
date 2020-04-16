@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['@jmdc/eslint-config-typescript', 'plugin:react/recommended'],
-  plugins: ['react-hooks'],
+  plugins: ['react', 'react-hooks'],
   rules: {
     'react/display-name': 'off',
     'react/jsx-curly-brace-presence': ['error', { props: 'always' }],
