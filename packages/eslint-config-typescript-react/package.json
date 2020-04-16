@@ -1,6 +1,6 @@
 {
   "name": "@jmdc/eslint-config-typescript-react",
-  "version": "0.14.1",
+  "version": "0.15.0",
   "main": "index.js",
   "license": "MIT",
   "repository": {
@@ -12,10 +12,7 @@
     "@typescript-eslint/eslint-plugin": "^2.26.0",
     "@typescript-eslint/parser": "^2.26.0",
     "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.10.1",
-    "eslint-plugin-compat": "^3.5.1",
     "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^3.0.0"
   },
@@ -26,9 +23,7 @@
     "@typescript-eslint/eslint-plugin": ">=2",
     "@typescript-eslint/parser": ">=2",
     "eslint": ">=6",
-    "eslint-plugin-compat": ">=3",
     "eslint-plugin-import": ">=2",
-    "eslint-plugin-jsx-a11y": ">=6",
     "eslint-plugin-react": ">=7",
     "eslint-plugin-react-hooks": ">=2"
   }
