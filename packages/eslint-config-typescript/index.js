@@ -13,7 +13,11 @@ module.exports = {
   rules: {
     '@typescript-eslint/no-unused-vars': 'warn',
     curly: 'error',
-    'import/order': ['error'],
+    'import/order': ['error', {
+      alphabetize: {
+        order: 'asc',
+      },
+    }],
     'no-console': 'off',
     'no-extra-semi': 'off',
 
