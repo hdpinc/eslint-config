@@ -1,6 +1,6 @@
 {
   "name": "@jmdc/eslint-config-typescript",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "main": "index.js",
   "license": "MIT",
   "repository": {
@@ -13,7 +13,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.31.0",
     "@typescript-eslint/parser": "^2.31.0",
-    "eslint": "^6.8.0",
+    "eslint": "^7.0.0",
     "eslint-plugin-import": "^2.20.2"
   },
   "devDependencies": {
