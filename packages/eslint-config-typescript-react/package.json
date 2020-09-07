@@ -1,6 +1,6 @@
 {
   "name": "@jmdc/eslint-config-typescript-react",
-  "version": "0.20.0",
+  "version": "0.21.0",
   "main": "index.js",
   "license": "MIT",
   "repository": {
@@ -11,7 +11,7 @@
     "release": "npm publish"
   },
   "dependencies": {
-    "@jmdc/eslint-config-typescript": "^0.11.0",
+    "@jmdc/eslint-config-typescript": "^0.12.0",
     "@typescript-eslint/eslint-plugin": "^4.0.1",
     "@typescript-eslint/parser": "^4.0.1",
     "eslint": "^7.8.0",
@@ -23,11 +23,11 @@
     "typescript": "^4.0.2"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": ">=2",
-    "@typescript-eslint/parser": ">=2",
+    "@typescript-eslint/eslint-plugin": ">=4",
+    "@typescript-eslint/parser": ">=4",
     "eslint": ">=6",
     "eslint-plugin-import": ">=2",
     "eslint-plugin-react": ">=7",
-    "eslint-plugin-react-hooks": ">=2"
+    "eslint-plugin-react-hooks": ">=4"
   }
 }
