@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hdpinc/eslint-config/packages/eslint-config-typescript"
+    "url": "https://github.com/hdpinc/eslint-config"
   },
   "scripts": {
     "release": "npm publish"
