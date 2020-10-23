@@ -51,16 +51,15 @@ jobs:
       - restore_yarn_cache
       - run: yarn install
       - save_yarn_cache
+      - add-ssh-keys:
+          fingerprints:
+            - '62:80:8b:e4:f0:e2:7b:9b:6e:ae:c3:3c:97:eb:74:c2'
       - run:
-          name: release eslint-config-typescript
+          name: Login npm
           command: |
-            cd packages/eslint-config-typescript
-            yarn semantic-release
-      - run:
-          name: release eslint-config-typescript-react
-          command: |
-            cd packages/eslint-config-typescript-react
-            yarn semantic-release
+            echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+            npm whoami
+      - run: yarn lerna version --yes --conventional-commits --create-release github
 workflows:
   version: 2
   test-and-release:
