@@ -18,7 +18,7 @@ commands:
       - save_cache:
           key: yarn-packages-{{ arch }}-{{ checksum ".node_version" }}-{{ checksum "yarn.lock" }}
           paths:
-            - /usr/local/share/.cache/yarn
+            - /home/circleci/.cache/yarn
   show_node_version:
     steps:
       - run:
