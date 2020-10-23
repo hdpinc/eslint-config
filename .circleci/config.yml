@@ -1,30 +1,66 @@
 version: 2.1
-jobs:
-  test:
-    docker:
-      - image: circleci/node:14
+
+commands:
+  prepare:
     steps:
-      - run: yarn cache dir
+      - show_node_version
+      - show_yarn_cache_location
+  restore_yarn_cache:
+    steps:
+      - run: node -v > .node_version
+      - restore_cache:
+          keys:
+            - yarn-packages-{{ arch }}-{{ checksum ".node_version" }}-{{ checksum "yarn.lock" }}
+            - yarn-packages-{{ arch }}-{{ checksum ".node_version" }}-
+  save_yarn_cache:
+    steps:
+      - run: node -v > .node_version
+      - save_cache:
+          key: yarn-packages-{{ arch }}-{{ checksum ".node_version" }}-{{ checksum "yarn.lock" }}
+          paths:
+            - /usr/local/share/.cache/yarn
+  show_node_version:
+    steps:
       - run:
           name: show node version
           command: |
             echo "node version: $(node -v)"
             echo "npm version: $(npm -v)"
             echo "yarn version: $(yarn -v)"
+  show_yarn_cache_location:
+    steps:
+      - run: yarn cache dir
+
+jobs:
+  test:
+    docker:
+      - image: circleci/node:14
+    steps:
+      - prepare
       - checkout
-      - run: node -v > .node_version
-      - restore_cache:
-          keys:
-            - yarn-packages-{{ arch }}-{{ checksum ".node_version" }}-{{ checksum "yarn.lock" }}
-            - yarn-packages-{{ arch }}-{{ checksum ".node_version" }}-
+      - restore_yarn_cache
       - run: yarn install
-      - save_cache:
-          key: yarn-packages-{{ arch }}-{{ checksum ".node_version" }}-{{ checksum "yarn.lock" }}
-          paths:
-            - ~/.cache/yarn/
+      - save_yarn_cache
       - run: yarn jest
+  release:
+    docker:
+      - image: circleci/node:14
+    steps:
+      - prepare
+      - checkout
+      - restore_yarn_cache
+      - run: yarn install
+      - save_yarn_cache
+      - run: yarn semantic-release
 workflows:
   version: 2
-  test:
+  test-and-release:
     jobs:
       - test
+      - release:
+          requires:
+            - test
+          filters:
+            branches:
+              only:
+                - master
