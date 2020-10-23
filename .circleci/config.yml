@@ -51,7 +51,7 @@ jobs:
       - restore_yarn_cache
       - run: yarn install
       - save_yarn_cache
-      - add-ssh-keys:
+      - add_ssh_keys:
           fingerprints:
             - '62:80:8b:e4:f0:e2:7b:9b:6e:ae:c3:3c:97:eb:74:c2'
       - run:
