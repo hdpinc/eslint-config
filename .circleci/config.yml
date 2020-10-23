@@ -4,7 +4,6 @@ jobs:
     docker:
       - image: circleci/node:14
     steps:
-      - checkout
       - run: yarn cache dir
       - run:
           name: show node version
@@ -12,6 +11,7 @@ jobs:
             echo "node version: $(node -v)"
             echo "npm version: $(npm -v)"
             echo "yarn version: $(yarn -v)"
+      - checkout
       - run: node -v > .node_version
       - restore_cache:
           keys:
