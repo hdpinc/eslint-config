@@ -6,12 +6,9 @@
   "rangeStrategy": "bump",
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": ["before 3am on the first day of the month"]
+    "schedule": ["before 3am on wednesday"]
   },
   "automerge": true,
-  "major": {
-    "automerge": false
-  },
   "packageRules": [
     {
       "groupName": "Dev dependencies",
