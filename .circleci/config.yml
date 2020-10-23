@@ -51,7 +51,16 @@ jobs:
       - restore_yarn_cache
       - run: yarn install
       - save_yarn_cache
-      - run: yarn semantic-release
+      - run:
+          name: release eslint-config-typescript
+          command: |
+            cd packages/eslint-config-typescript
+            yarn semantic-release
+      - run:
+          name: release eslint-config-typescript-react
+          command: |
+            cd packages/eslint-config-typescript-react
+            yarn semantic-release
 workflows:
   version: 2
   test-and-release:
