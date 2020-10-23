@@ -1,16 +1,30 @@
 version: 2.1
 jobs:
   build:
-    working_directory: ~/app
     docker:
-      - image: node:12
+      - image: circleci/node:14
     steps:
       - checkout
+      - run: yarn cache dir
+      - run:
+          name: show node version
+          command: |
+            echo "node version: $(node -v)"
+            echo "npm version: $(npm -v)"
+            echo "yarn version: $(yarn -v)"
+      - run: node -v > .node_version
       - restore_cache:
-          key: dependencies-{{ checksum "yarn.lock" }}
+          keys:
+            - yarn-packages-{{ arch }}-{{ checksum ".node_version" }}-{{ checksum "yarn.lock" }}
+            - yarn-packages-{{ arch }}-{{ checksum ".node_version" }}-
       - run: yarn install
       - save_cache:
-          key: dependencies-{{ checksum "yarn.lock" }}
+          key: yarn-packages-{{ arch }}-{{ checksum ".node_version" }}-{{ checksum "yarn.lock" }}
           paths:
-            - ~/app/node_modules
             - ~/.cache/yarn/
+      - run: yarn jest
+workflows:
+  version: 2
+  test:
+    jobs:
+      - test
