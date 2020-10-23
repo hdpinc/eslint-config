@@ -5,6 +5,9 @@ commands:
     steps:
       - show_node_version
       - show_yarn_cache_location
+      - add_ssh_keys:
+          fingerprints:
+            - '62:80:8b:e4:f0:e2:7b:9b:6e:ae:c3:3c:97:eb:74:c2'
   restore_yarn_cache:
     steps:
       - run: node -v > .node_version
