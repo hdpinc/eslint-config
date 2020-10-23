@@ -52,6 +52,11 @@ jobs:
       - run: yarn install
       - save_yarn_cache
       - run:
+          name: Setup git user
+          command: |
+            git config user.email "ysgk+circleci@users.noreply.github.com"
+            git config user.name "ysgk+circleci"
+      - run:
           name: Login npm
           command: |
             echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
