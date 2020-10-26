@@ -64,7 +64,14 @@ jobs:
           command: |
             echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
             npm whoami
-      - run: yarn lerna version --yes --conventional-commits --create-release github
+      - run:
+          name: Create releases and push to GitHub
+          command: |
+            yarn lerna version --yes --conventional-commits --create-release github
+      - run:
+          name: Publish packages
+          command: |
+            yarn lerna publish from-package --yes
 workflows:
   version: 2
   test-and-release:
