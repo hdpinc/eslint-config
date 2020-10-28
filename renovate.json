@@ -11,14 +11,17 @@
   "packageRules": [
     {
       "groupName": "Dev dependencies",
-      "depTypeList": ["devDependencies"]
+      "depTypeList": ["devDependencies"],
+      "excludePackageNames": ["eslint"],
+      "excludePackagePatterns": ["^eslint/", "^@typescript-eslint/"]
     },
     {
       "depTypeList": ["peerDependencies"],
-      "rangeStrategy": "widen"
+      "enabled": false
     },
     {
       "groupName": "ESLint",
+      "packageNames": ["eslint"],
       "packagePatterns": ["^eslint/", "^@typescript-eslint/"]
     }
   ]
