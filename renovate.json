@@ -12,8 +12,7 @@
     {
       "groupName": "Dev dependencies",
       "depTypeList": ["devDependencies"],
-      "excludePackageNames": ["eslint"],
-      "excludePackagePatterns": ["^eslint/", "^@typescript-eslint/"]
+      "excludePackagePatterns": ["^eslint", "^@typescript-eslint/"]
     },
     {
       "depTypeList": ["peerDependencies"],
@@ -21,8 +20,7 @@
     },
     {
       "groupName": "ESLint",
-      "packageNames": ["eslint"],
-      "packagePatterns": ["^eslint/", "^@typescript-eslint/"]
+      "packagePatterns": ["^eslint", "^@typescript-eslint/"]
     }
   ]
 }
