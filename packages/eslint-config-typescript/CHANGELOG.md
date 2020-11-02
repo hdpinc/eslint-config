@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/hdpinc/eslint-config/compare/@jmdc/eslint-config-typescript@1.1.0...@jmdc/eslint-config-typescript@1.2.0) (2020-11-02)
+
+
+### Features
+
+* 'prefer-const': 'error' ([5a8a0f6](https://github.com/hdpinc/eslint-config/commit/5a8a0f65332acd1b07edd8e9f41a120735c9a149))
+
+
+
+
+
 # [1.1.0](https://github.com/hdpinc/eslint-config/compare/@jmdc/eslint-config-typescript@1.0.7...@jmdc/eslint-config-typescript@1.1.0) (2020-11-02)
 
 
