@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/hdpinc/eslint-config/compare/@jmdc/eslint-config-typescript-react@1.1.1...@jmdc/eslint-config-typescript-react@1.1.2) (2020-11-02)
+
+
+### Bug Fixes
+
+* **deps:** update eslint to ^4.6.1 ([a1c7d74](https://github.com/hdpinc/eslint-config/commit/a1c7d746ce40452485d26811af30247c316011e4))
+
+
+
+
+
 ## [1.1.1](https://github.com/hdpinc/eslint-config/compare/@jmdc/eslint-config-typescript-react@1.1.0...@jmdc/eslint-config-typescript-react@1.1.1) (2020-11-02)
 
 **Note:** Version bump only for package @jmdc/eslint-config-typescript-react
