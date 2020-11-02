@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/hdpinc/eslint-config/compare/@jmdc/eslint-config-typescript@1.0.7...@jmdc/eslint-config-typescript@1.1.0) (2020-11-02)
+
+
+### Features
+
+* remove no-default-export rule ([90a49df](https://github.com/hdpinc/eslint-config/commit/90a49df77187e5f2f6e5fb117bce861bf74e43ea))
+
+
+
+
+
 ## [1.0.7](https://github.com/hdpinc/eslint-config/compare/@jmdc/eslint-config-typescript@1.0.6...@jmdc/eslint-config-typescript@1.0.7) (2020-10-27)
 
 
