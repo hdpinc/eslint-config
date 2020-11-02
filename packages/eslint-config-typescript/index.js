@@ -14,7 +14,7 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 'warn',
     curly: 'error',
     'func-style': 'warn',
-    'prefer-const': 'warn',
+    'prefer-const': 'error',
     'import/order': [
       'error',
       {
