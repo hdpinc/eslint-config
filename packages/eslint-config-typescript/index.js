@@ -23,7 +23,6 @@ module.exports = {
         },
       },
     ],
-    'import/no-default-export': 'warn',
     'no-console': 'off',
     'no-extra-semi': 'off',
 
