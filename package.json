@@ -6,6 +6,9 @@
     "type": "git",
     "url": "https://github.com/hdpinc/eslint-config"
   },
+  "scripts": {
+    "test": "jest --forceExit"
+  },
   "license": "MIT",
   "private": true,
   "workspaces": [
