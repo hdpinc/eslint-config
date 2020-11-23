@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.5](https://github.com/hdpinc/eslint-config/compare/@jmdc/eslint-config-typescript@1.3.4...@jmdc/eslint-config-typescript@1.3.5) (2020-11-23)
+
+**Note:** Version bump only for package @jmdc/eslint-config-typescript
+
+
+
+
+
 ## [1.3.4](https://github.com/hdpinc/eslint-config/compare/@jmdc/eslint-config-typescript@1.3.3...@jmdc/eslint-config-typescript@1.3.4) (2020-11-21)
 
 **Note:** Version bump only for package @jmdc/eslint-config-typescript
