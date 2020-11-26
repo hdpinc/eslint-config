@@ -1,0 +1,57 @@
+name: test-and-release
+
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - run: yarn cache dir
+      - name: Show versions
+        run: |
+          echo "node version: $(node -v)"
+          echo "npm version: $(npm -v)"
+          echo "yarn version: $(yarn -v)"
+      - run: yarn install
+      - run: yarn lint
+      - name: commitlint
+        run: yarn commitlint --from origin/master --to HEAD --verbose
+      - run: yarn test
+  release:
+    needs: [test]
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - run: yarn cache dir
+      - name: Show versions
+        run: |
+          echo "node version: $(node -v)"
+          echo "npm version: $(npm -v)"
+          echo "yarn version: $(yarn -v)"
+      - run: yarn install
+      - name: Setup git user
+        run: |
+          git config user.email "ysgk+github@users.noreply.github.com"
+          git config user.name "ysgk+github"
+      - name: Login npm
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+          npm whoami
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Create releases and push to GitHub
+        run: |
+          yarn lerna version --yes --conventional-commits --create-release github
+      - name: Publish packages
+        run: |
+          yarn lerna publish from-package --yes
