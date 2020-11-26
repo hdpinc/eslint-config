@@ -7,7 +7,7 @@
     "url": "https://github.com/hdpinc/eslint-config"
   },
   "scripts": {
-    "lint": "eslint . --ext '.ts,.tsx,.js'",
+    "lint": "eslint . --ext '.ts,.tsx,.js' --ignore-pattern 'cases/'",
     "test": "jest --forceExit"
   },
   "license": "MIT",
