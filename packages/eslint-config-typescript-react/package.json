@@ -1,6 +1,6 @@
 {
   "name": "@jmdc/eslint-config-typescript-react",
-  "version": "1.1.85",
+  "version": "1.1.86",
   "main": "index.js",
   "license": "MIT",
   "repository": {
