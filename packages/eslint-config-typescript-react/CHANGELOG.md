@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.99 (2021-05-04)
+
+**Note:** Version bump only for package @jmdc/eslint-config-typescript-react
+
+
+
+
+
 ## 1.1.98 (2021-04-27)
 
 **Note:** Version bump only for package @jmdc/eslint-config-typescript-react
