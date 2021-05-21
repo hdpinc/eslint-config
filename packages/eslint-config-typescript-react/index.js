@@ -3,7 +3,7 @@ module.exports = {
   plugins: ['react', 'react-hooks'],
   rules: {
     'react/display-name': 'off',
-    'react/jsx-boolean-value': 'error',
+    'react/jsx-boolean-value': ['error', 'always'],
     'react/jsx-curly-brace-presence': ['error', { props: 'always' }],
     'react-hooks/exhaustive-deps': 'warn',
     'react-hooks/rules-of-hooks': 'error',
