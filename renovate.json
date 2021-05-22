@@ -1,11 +1,12 @@
 {
   "extends": ["config:base"],
   "timezone": "Asia/Tokyo",
+  "schedule": ["after 3am on sunday"],
   "prHourlyLimit": 0,
   "rangeStrategy": "bump",
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": ["before 3am on wednesday"]
+    "schedule": ["after 9pm on sunday"]
   },
   "automerge": true,
   "packageRules": [
