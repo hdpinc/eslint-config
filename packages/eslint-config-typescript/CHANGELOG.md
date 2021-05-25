@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.3.111 (2021-05-25)
+
+**Note:** Version bump only for package @jmdc/eslint-config-typescript
+
+
+
+
+
 ## 1.3.110 (2021-05-23)
 
 **Note:** Version bump only for package @jmdc/eslint-config-typescript
