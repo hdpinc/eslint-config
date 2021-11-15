@@ -1,9 +1,6 @@
 enum fluit {
   APPLE,
-  ORANGE
+  ORANGE,
 }
 
-
-namespace MyNameSpace {
-
-}
+namespace MyNameSpace {}

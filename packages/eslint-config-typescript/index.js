@@ -5,7 +5,7 @@ module.exports = {
     node: true,
   },
   extends: ['eslint:recommended'],
-  plugins: ['@typescript-eslint', 'import'],
+  plugins: ['@typescript-eslint'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     sourceType: 'module',
@@ -16,14 +16,6 @@ module.exports = {
     curly: 'error',
     'func-style': 'warn',
     'prefer-const': 'error',
-    'import/order': [
-      'error',
-      {
-        alphabetize: {
-          order: 'asc',
-        },
-      },
-    ],
     'no-console': 'off',
     'no-extra-semi': 'off',
 
