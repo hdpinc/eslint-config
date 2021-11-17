@@ -1,4 +1,3 @@
-const func = () => {
-}
+const func = () => {}
 
 func()

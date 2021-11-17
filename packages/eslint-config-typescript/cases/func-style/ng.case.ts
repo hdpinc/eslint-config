@@ -1,5 +1,3 @@
-function func () {
-
-}
+function func() {}
 
 func()

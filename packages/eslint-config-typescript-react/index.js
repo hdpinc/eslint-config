@@ -8,10 +8,13 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     'react-hooks/rules-of-hooks': 'error',
     'react/prop-types': 'off',
-    "react/self-closing-comp": ["error", {
-      "component": true,
-      "html": true
-    }]
+    'react/self-closing-comp': [
+      'error',
+      {
+        component: true,
+        html: true,
+      },
+    ],
   },
   settings: {
     react: {
