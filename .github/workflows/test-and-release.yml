@@ -42,6 +42,11 @@ jobs:
           echo "npm version: $(npm -v)"
           echo "yarn version: $(yarn -v)"
       - run: yarn install
+      - name: Publish packages
+        run: |
+          yarn lerna publish from-package --yes --no-verify-access
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Setup git user
         run: |
           git config user.email "ysgk+github@users.noreply.github.com"
@@ -51,8 +56,3 @@ jobs:
           yarn lerna version --yes --conventional-commits --create-release github
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Publish packages
-        run: |
-          yarn lerna publish from-package --yes --no-verify-access
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
