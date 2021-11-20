@@ -11,7 +11,7 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: 16
       - run: yarn cache dir
       - name: Show versions
         run: |
@@ -33,7 +33,7 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: 16
       - run: yarn cache dir
       - name: Show versions
         run: |
