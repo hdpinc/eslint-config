@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/hdpinc/eslint-config/compare/@jmdc/eslint-config-typescript@1.3.190...@jmdc/eslint-config-typescript@2.0.0) (2021-11-20)
+
+
+### Features
+
+* eslint-plugin-import を削除 ([b67ea9e](https://github.com/hdpinc/eslint-config/commit/b67ea9e782dff571a07d65b61cbcfd305bcfc38b))
+
+
+### BREAKING CHANGES
+
+* eslint-plugin-import の代わりに prettier-plugin-organize-imports を使用してください。
+
+
+
+
+
 ## 1.3.190 (2021-11-14)
 
 **Note:** Version bump only for package @jmdc/eslint-config-typescript
