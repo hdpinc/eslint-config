@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/hdpinc/eslint-config/compare/@jmdc/eslint-config-typescript@2.0.0...@jmdc/eslint-config-typescript@2.0.1) (2021-11-20)
+
+
+### Bug Fixes
+
+* fix peer deps ([f970938](https://github.com/hdpinc/eslint-config/commit/f9709383639e70db5d76522e03e527a9860d5fc9))
+
+
+
+
+
 # [2.0.0](https://github.com/hdpinc/eslint-config/compare/@jmdc/eslint-config-typescript@1.3.190...@jmdc/eslint-config-typescript@2.0.0) (2021-11-20)
 
 
