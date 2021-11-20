@@ -1,0 +1,24 @@
+{
+  extends: ['config:base'],
+  timezone: 'Asia/Tokyo',
+  schedule: ['after 3am on sunday'],
+  prHourlyLimit: 0,
+  rangeStrategy: 'bump',
+  postUpdateOptions: ['yarnDedupeHighest'], // yarn.lock の重複レコードを除去
+  automerge: true,
+  packageRules: [
+    {
+      groupName: 'Dev dependencies',
+      depTypeList: ['devDependencies'],
+      excludePackagePatterns: ['^eslint', '^@typescript-eslint/'],
+    },
+    {
+      depTypeList: ['peerDependencies'],
+      enabled: false,
+    },
+    {
+      groupName: 'ESLint',
+      packagePatterns: ['^eslint', '^@typescript-eslint/'],
+    },
+  ],
+}
