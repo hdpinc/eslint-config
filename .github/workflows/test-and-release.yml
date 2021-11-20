@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 16
-      - run: yarn cache dir
+          cache: yarn
       - name: Show versions
         run: |
           echo "node version: $(node -v)"
@@ -34,7 +34,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 16
-      - run: yarn cache dir
+          cache: yarn
       - name: Show versions
         run: |
           echo "node version: $(node -v)"
