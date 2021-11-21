@@ -1,11 +1,23 @@
 {
   extends: ['config:base'],
   timezone: 'Asia/Tokyo',
-  schedule: ['after 3am on sunday'],
+  schedule: ['every weekend'],
   prHourlyLimit: 0,
   rangeStrategy: 'bump',
   postUpdateOptions: ['yarnDedupeHighest'], // yarn.lock の重複レコードを除去
-  automerge: true,
+  prCreation: 'not-pending',
+  major: {
+    stabilityDays: 7,
+    automerge: false,
+  },
+  minor: {
+    stabilityDays: 3,
+    automerge: true,
+  },
+  patch: {
+    stabilityDays: 3,
+    automerge: true,
+  },
   packageRules: [
     {
       depTypeList: ['peerDependencies'],
