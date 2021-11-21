@@ -13,11 +13,6 @@ jobs:
         with:
           node-version: 16
           cache: yarn
-      - name: Show versions
-        run: |
-          echo "node version: $(node -v)"
-          echo "npm version: $(npm -v)"
-          echo "yarn version: $(yarn -v)"
       - run: yarn install
       - run: yarn lint
       - name: commitlint
@@ -36,11 +31,6 @@ jobs:
           node-version: 16
           cache: yarn
           registry-url: https://registry.npmjs.org
-      - name: Show versions
-        run: |
-          echo "node version: $(node -v)"
-          echo "npm version: $(npm -v)"
-          echo "yarn version: $(yarn -v)"
       - run: yarn install
       - name: Publish packages
         run: |
