@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.16](https://github.com/hdpinc/eslint-config/compare/@jmdc/eslint-config-typescript-react@2.0.15...@jmdc/eslint-config-typescript-react@2.0.16) (2022-02-11)
+
+**Note:** Version bump only for package @jmdc/eslint-config-typescript-react
+
+
+
+
+
 ## [2.0.15](https://github.com/hdpinc/eslint-config/compare/@jmdc/eslint-config-typescript-react@2.0.14...@jmdc/eslint-config-typescript-react@2.0.15) (2022-02-03)
 
 **Note:** Version bump only for package @jmdc/eslint-config-typescript-react
