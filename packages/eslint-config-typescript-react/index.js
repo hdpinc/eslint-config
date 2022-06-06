@@ -5,6 +5,7 @@ module.exports = {
     'react/display-name': 'off',
     'react/jsx-boolean-value': ['error', 'always'],
     'react/jsx-curly-brace-presence': ['error', { props: 'always' }],
+    'react/jsx-no-leaked-render': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react-hooks/rules-of-hooks': 'error',
     'react/prop-types': 'off',
