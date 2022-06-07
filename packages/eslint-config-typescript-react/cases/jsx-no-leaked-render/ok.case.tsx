@@ -1,10 +1,10 @@
+/* eslint react/react-in-jsx-scope: "off" */
 const Comp = () => {
   const count = 0
 
   return (
-    // eslint-disable-next-line react/react-in-jsx-scope
     <>
-      { !count && 'No results found' }
+      { count > 0 && <span>There are {count} results</span> }
     </>
   )
 }
