@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/hdpinc/eslint-config/compare/@jmdc/eslint-config-typescript-react@2.0.33...@jmdc/eslint-config-typescript-react@2.1.0) (2022-06-07)
+
+
+### Features
+
+* enable react/jsx-no-leaked-render ([7ac5b8e](https://github.com/hdpinc/eslint-config/commit/7ac5b8e362dedf444b65925aa6d72a1ecdfa0537))
+
+
+
+
+
 ## [2.0.33](https://github.com/hdpinc/eslint-config/compare/@jmdc/eslint-config-typescript-react@2.0.32...@jmdc/eslint-config-typescript-react@2.0.33) (2022-06-03)
 
 **Note:** Version bump only for package @jmdc/eslint-config-typescript-react
